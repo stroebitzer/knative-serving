@@ -1,7 +1,7 @@
 FROM openjdk:11.0.2-jdk-stretch
 
-WORKDIR /srv/knative-serve
+WORKDIR /srv/knative-serving
 
-COPY build/libs/knative-serve.jar /srv/knative-serve/knative-serve.jar
+COPY build/libs/knative-serving.jar /srv/knative-serve/knative-serving.jar
 
-ENTRYPOINT [ "java", "-jar", "knative-serve.jar" ]
+ENTRYPOINT [ "java", "-jar", "knative-serving.jar" ]

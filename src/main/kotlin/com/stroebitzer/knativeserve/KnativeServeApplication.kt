@@ -17,6 +17,6 @@ fun main(args: Array<String>) {
 class MyController {
 
     @GetMapping("/")
-    fun greeting() = ResponseEntity.ok("Hello KNative " + System.getenv("KNATIVE_METRIC", ""))
+    fun greeting() = ResponseEntity.ok("Hello KNative " + System.getenv("KNATIVE_METRIC"))
 
 }
